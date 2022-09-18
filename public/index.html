@@ -5,55 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="/src/css/index.css">
 
     <!--links-->
     <link rel="stylesheet" href="../assets/vendors/tailwindcss.css">
 	<link rel="stylesheet" href="../assets/vendors/tailwind.elements.min.css">
 	<link rel="stylesheet" href="../css/style.css">
 
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="../assets/vendors/jquery-3.6.1.min.js"></script>
 	<script src="../assets/vendors/tailwindcss.js"></script>
 	<script src="../assets/vendors/tailwind.elements.min.js"></script>
     <title>Venia Clone</title>
 </head>
-<body>
-    <header>
-
+<body class="mx-2">
+    <header class=" relative w-full flex flex-wrap items-center justify-between py-4 bg-gray-100   focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light ">
+        <div class="navbar flex justify-right h-5 w-5 ml-5 ">
+            <img src="../Assets/icons/menu.png" alt="menuBar">
+        </div>
+        <div class="flex items-center text-2xl ">
+            VENIA
+        </div>
+        <div>
+            <div class="flex justify-right float-right h-5 w-7 ml-5 right-[100%] place-content-right ">
+                <img src="../Assets/icons/bag.png" alt="search-interface-symbol">
+            </div>
+            <div class="flex justify-right float-right h-5 w-7 ml-5 right-[100%] place-content-right">
+                <img src="../Assets/icons/search-interface-symbol.png" alt="bag">
+            </div>
+        </div>
     </header>
     <main>
-        <div class="flex flex-col items-center ">
-            <button class="py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>            
+        <div class="mt-4 mb-4">
+            <ul class="breadcrumb">
+                <li><a href="#">Clothing</a></li>
+                <li><a href="#">Women's</a></li>
+                <li><a href="#">Outerwear</a></li>
+              </ul>
+        </div>
+        <div class="flex  flex-col w-full mx-3  md: w-[70%] md: justify-center">
+            <img class="w-full " src="../Assets/images/gettyimages-1200866124-170667a.jpg" alt="Image">
+            <div class=" text-3xl">
+               Yellow Hoodie
+            </div>
+            <div >
+                $99.0
+            </div>
+            <div class="flex flex-row-wrap">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+                In Latin Baby Names the meaning of the name Loren is:<br>
+                 The laurel tree or sweet bay tree symbolic of<br>
+                  honor and victory. Old name with many variants. <br>
+                  'From Laurentium <a class="underline" href="">Read more</a>  
+            </p>
+        </div>
+        <hr class="mx-4 my-5">
+        <div class="flex flex-col space-y-4 px-4 mx-6  md: justify-center">
+            <div class="text-2xl">Color</div>
+            <div class="flex flex-row-wrap space-evenly gap-4">
+                <div class="bg-teal-500 h-8 w-16 border-1 rounded-md"> </div>
+                <div class="bg-pink-500 h-8 w-16 border-1 rounded-md"> </div>
+                <div class="bg-blue-800 h-8 w-16 border-1 rounded-md"> </div>
+                <div class="bg-purple-400 h-8 w-16 border-1 rounded-md"> </div>
+            </div>
+        </div>
+        <div class="flex flex-col items-center py-5 space-y-7">
+            <button class="py-2 px-2 text-sm text-blue-700 font-semibold rounded-3xl border-2 border-blue-700 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">LOAD MORE REVIEWS</button>            
             <div>
                 <p>Currently displaying 3 of 175 views</p>
             </div>
         </div>        
     </main>
     <footer>
-        <hr class="my-2">
-        <div class="flex flex-col space-y-7 my-auto px-[20%]">
+        <hr class="my-2 mb-10">
+        <div class="flex flex-col space-y-7 my-auto mx-3 px-[40%]">
             <div class="about-footer flex flex-col space-y-4 w-full ml-2 ">
-                <span>Account</span>
+                <span class="text-lg semibold">Account</span>
                 <a href="http://"><span>Sign in</span></a>
                 <a href="http://"><span>Register</span></a>
                 <a href="http://"><span>Order Status</span></a>
                 <a href="http://"><span>Returns</span></a><br><br>
             </div>
             <div class="about-footer flex flex-col space-y-4 w-full ml-2 ">
-                <span>About Us</span>
+                <span class="text-lg semibold">About Us</span>
                 <a href="http://"><span>Our Story</span></a>
                 <a href="http://"><span>Email Sign Up</span></a>
                 <a href="http://"><span>Give Back</span></a><br><br>
             </div>
             <div class="about-footer flex flex-col space-y-4 w-full ml-2 ">
-                <span>Help</span>
+                <span class="text-lg semibold">Help</span>
                 <a href="http://"><span>Live Chat</span></a>
                 <a href="http://"><span>Contact Us</span></a>
                 <a href="http://"><span>Order Status</span></a>
                 <a href="http://"><span>Returns</span></a><br><br>
             </div>
-            <div>
+            <div class="space-y-4">
                 <p>
-                    <p>Follow us!</p>
+                    <p class="text-lg semibold">Follow us!</p>
                     Some writing here like that i dont understand<br>
                     but its on any docs.
                     <div class="flex flex-row space-x-3">
@@ -65,7 +121,7 @@
                 </p>
             </div>
         </div>
-        <hr class="my-2">
+        <hr class="my-2 mb-4">
         <div class="last-footer flex flex-col items-center justify-center text-center space-y-5">
             <div class="space-x-3 flex items-center w-full justify-center">
                 <a href="http://"><span class="underline">Term of use</span></a>
@@ -73,7 +129,7 @@
             </div>
             
             <div class="space-y-5 justify-center">
-                <div class="space-y-2 opacity-100">
+                <div class="space-y-2 opacity-70">
                     <div class=" flex w-full justify-center text-center">
                         © Company name
                     </div>
