@@ -31,3 +31,8 @@ ul.breadcrumb {
   .checked{
     color: #edf1f5;
   }
+
+  /*gradient fix */
+  div.color-box {
+    background: linear-gradient(25deg, #0da0bc 50%, transparent 50%);
+  }

@@ -14,6 +14,7 @@
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<script src="../assets/vendors/jquery-3.6.1.min.js"></script>
 	<script src="../assets/vendors/tailwindcss.js"></script>
@@ -45,7 +46,7 @@
                 <li><a href="#">Outerwear</a></li>
               </ul>
         </div>
-        <div class="flex  flex-col w-full mx-3  md: w-[70%] md: justify-center">
+        <div class="flex  flex-col max-w-[-webkit-fill-available] mx-3  md:max-w-[70px] md: justify-center">
             <img class="w-full " src="../Assets/images/gettyimages-1200866124-170667a.jpg" alt="Image">
             <div class=" text-3xl">
                Yellow Hoodie
@@ -68,19 +69,106 @@
             </p>
         </div>
         <hr class="mx-4 my-5">
-        <div class="flex flex-col space-y-4 px-4 mx-6  md: justify-center">
-            <div class="text-2xl">Color</div>
-            <div class="flex flex-row-wrap space-evenly gap-4">
-                <div class="bg-teal-500 h-8 w-16 border-1 rounded-md"> </div>
-                <div class="bg-pink-500 h-8 w-16 border-1 rounded-md"> </div>
-                <div class="bg-blue-800 h-8 w-16 border-1 rounded-md"> </div>
-                <div class="bg-purple-400 h-8 w-16 border-1 rounded-md"> </div>
+        <div class="flex flex-col space-y-8 md:justify-center md:place-content-center md:items-center w-full">
+            <div class="flex flex-col space-y-4 px-4 mx-6   md: justify-center">
+                <div class="text-2xl">Color</div>
+                <div class="flex flex-row-wrap space-evenly gap-4">
+                    <div class="color-box bg-teal-500 h-8 w-16 border-1 rounded-md"> </div>
+                    <div class="color-box bg-pink-500 h-8 w-16 border-1 rounded-md"> </div>
+                    <div class="color-box bg-blue-800 h-8 w-16 border-1 rounded-md"> </div>
+                    <div class="color-box bg-purple-400 h-8 w-16 border-1 rounded-md"> </div>
+                </div>
             </div>
-        </div>
-        <div class="flex flex-col items-center py-5 space-y-7">
-            <button class="py-2 px-2 text-sm text-blue-700 font-semibold rounded-3xl border-2 border-blue-700 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">LOAD MORE REVIEWS</button>            
-            <div>
-                <p>Currently displaying 3 of 175 views</p>
+            <div class="flex flex-col space-y-4 px-4 mx-6  md: justify-center">
+                <div class="text-2xl">Size</div>
+                <div class="flex flex-row-wrap space-evenly gap-4">
+                    <div class="flex h-8 w-16 border-2 items-center justify-center rounded-md">XS</div>
+                    <div class="flex h-8 w-16 border-2 items-center justify-center rounded-md">S</div>
+                    <div class="flex h-8 w-16 border-2 items-center justify-center rounded-md">M</div>
+                    <div class="flex h-8 w-16 border-2 items-center justify-center rounded-md">L</div>
+                    <div class="flex h-8 w-16 border-2 items-center justify-center rounded-md">XL</div>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 px-4 mx-6  md: justify-center">
+                <div class="text-2xl">Quality</div>
+                <div class="flex flex-row-wrap mt-5 place-items-center items-center justify-center">
+                    <div class="flew rounded-full py-1 px-3 border-2 items-center justify-center">-</div>
+                    <div class="flew rounded border-2 w-32 items-center justify-center place-content-center">1</div>
+                    <div class="flew rounded-full py-1 px-3 border-2 items-center justify-center">+</div>
+                </div>
+                <div class="flex flex-col items-center py-5 space-y-7">
+                    <button class="py-2 px-2 text-sm text-white bg-blue-600 font-semibold rounded-3xl border-2 border-blue-700 w-64 hover:text-black hover:bg-slate hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">ADD TO CART</button>   
+                </div>
+                <div class="flex flex-row-wrap items-center justify center place-content-center space-between-8 space-evenly gap-8">
+                    <i class="fa fa-heart"> Save </i>
+                    <i class="fa fa-share">share</i>
+                </div>
+                <div class="flex flex-col space-y-4 md: place-content-center md:justify-center md:items-center">
+                    <div class="flex flex-col place-items-center justify-center ">
+                        <div class=" text-3xl">
+                            Yellow Hoodie
+                         </div>
+                         <span>Description</span>
+                    </div>
+                    <p>
+                        In Latin Baby Names the meaning of the name Loren is:<br>
+                        The laurel tree or sweet bay tree symbolic of<br>
+                        honor and victory. Old name with many variants. <br>
+                        'From Laurentium.  
+                    </p>
+                </div>
+                <div class="flex flex-col space-y-4 ">
+                    <span class="items-center justify-center place-content-center mx-auto">Details</span>
+                    <div class="grid grid-cols-2 gap-4 ">
+                        <div class="flex flex-row-wrap gap-2"><img class="h-8 w-8" src="../Assets/images/sweat-wicking.jfif" alt="">sweat-wicking</div>
+                        <div class="flex flex-row-wrap gap-2"><img class="h-8 w-8" src="../Assets/images/breathable.png" alt="">breathable</div>
+                        <div class="flex flex-row-wrap gap-2"><img class="h-8 w-8" src="../Assets/images/braethable2.png" alt="">Lightweight Fabriv</div>
+                        <div class="flex flex-row-wrap gap-2"><img class="h-8 w-8" src="../Assets/images/nylon.png" alt="">69% Nylon, 31% lycra</div>
+                    </div>
+                </div>
+                <div style="background-color: #1f39ff; height: 10px; width: 90px;" class="flex mx-auto  justify-center place-content-center items-center "></div>
+            </div>
+            <div class="flex flex-col space-y-6">
+                <span class="text-3xl">Why we like Yellow Pullovers</span>
+                <div class="flex flex-col space-y-8">
+                    <div>
+                        <div style="background-color: #1f39ff; height: 200px; width: 350px;" class="flex rounded-3xl ">
+                        </div>
+                        <p>
+                            In Latin Baby Names the meaning of the name Loren is:<br>
+                            The laurel tree or sweet bay tree symbolic of<br>
+                            honor and victory. Old name with many variants. <br>
+                            'From Laurentium.  
+                        </p>
+                    </div>
+                    <div>
+                        <div style="background-color: #1f39ff; height: 200px; width: 350px;" class="flex rounded-3xl ">
+                        </div>
+                        <p>
+                            In Latin Baby Names the meaning of the name Loren is:<br>
+                            The laurel tree or sweet bay tree symbolic of<br>
+                            honor and victory. Old name with many variants. <br>
+                            'From Laurentium.  
+                        </p>
+                    </div>
+                    <div>
+                        <div style="background-color: #1f39ff; height: 200px; width: 350px;" class="flex rounded-3xl ">
+                        </div>
+                        <p>
+                            In Latin Baby Names the meaning of the name Loren is:<br>
+                            The laurel tree or sweet bay tree symbolic of<br>
+                            honor and victory. Old name with many variants. <br>
+                            'From Laurentium.  
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="flex flex-col items-center py-5 space-y-7">
+                <button class="py-2 px-2 text-sm text-blue-700 font-semibold rounded-3xl border-2 border-blue-700 hover:text-white hover:bg-blue-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">LOAD MORE REVIEWS</button>            
+                <div>
+                    <p>Currently displaying 3 of 175 views</p>
+                </div>
             </div>
         </div>        
     </main>
@@ -135,7 +223,7 @@
                     </div>
                     <div class="flex w-full justify-center text-center">Address Ave, City Name, State ZIP</div>
                 </div>
-                <div class="flex w-full justify-center text-center "><span >V</span>ENIA</div>
+                <div class="flex w-full justify-center text-center text-4xl"><span >V</span>ENIA</div>
             </div>
         </div>
     </footer>
